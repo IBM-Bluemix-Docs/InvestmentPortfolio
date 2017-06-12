@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-03-16"
+lastupdated: "2017-03-17"
 
 ---
 {:new_window: target="_blank"}
@@ -28,7 +28,7 @@ Ensure that you have cURL installed because you'll use cURL to call the API in t
   "fss-portfolio-service": [
     {
       "credentials": {
-        "url": "https://fss-portfolio-service-dev.stage1.mybluemix.net/",
+        "url": "https://investment-portfolio.mybluemix.net/",
         "writer": {
           "userid": "aturearteratentstseenlyr",
           "password": "175256e9b6bff7607640562fd3c6c161bb97b059"
