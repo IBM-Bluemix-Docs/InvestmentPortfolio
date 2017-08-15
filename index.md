@@ -39,7 +39,7 @@ Ensure that you have cURL installed because you'll use cURL to call the API in t
         }
       },
       ...
-    } 
+    }
   ]
 }
 ```
