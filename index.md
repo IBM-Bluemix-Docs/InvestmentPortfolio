@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-15"
+lastupdated: "2017-08-16"
 
 ---
 {:new_window: target="_blank"}
@@ -23,6 +23,7 @@ Ensure that you have cURL installed because you'll use cURL to call the API in t
 
 1. Create an instance of the service.
 2. Review the service instance access credentials, similar to the following example:
+
 ```
 {
   "fss-portfolio-service": [
@@ -44,7 +45,6 @@ Ensure that you have cURL installed because you'll use cURL to call the API in t
 }
 ```
 {:codeblock}
-
 
 Use the writer credentials when making API calls to either read or make changes to data. If you want to restrict access to read-only, then use the reader credentials.
 
