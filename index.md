@@ -2,7 +2,7 @@
 
 copyright:
   years: 2017
-lastupdated: "2017-08-16"
+lastupdated: "2017-08-17"
 
 ---
 {:new_window: target="_blank"}
@@ -16,6 +16,7 @@ The {{site.data.keyword.investportshort}} service lets you store, update, and qu
 {:shortdesc}
 
 ## Before you begin
+{: #prereqs}
 The following steps show you how to obtain access to the {{site.data.keyword.investportshort}} service and invoke API methods. To use the {{site.data.keyword.investportshort}} REST API, it is important that you understand the basics of RESTful web services and JSON representations.
 Ensure that you have cURL installed because you'll use cURL to call the API in the examples.
 
@@ -29,14 +30,14 @@ Ensure that you have cURL installed because you'll use cURL to call the API in t
   "fss-portfolio-service": [
     {
       "credentials": {
-        "url": "https://investment-portfolio.mybluemix.net/",
+        "url": "<service-url>",
         "writer": {
-          "userid": "aturearteratentstseenlyr",
-          "password": "175256e9b6bff7607640562fd3c6c161bb97b059"
+          "userid": "<service-user-id>",
+          "password": "<service-user-password>"
         },
         "reader": {
-          "userid": "omptearokilaoresteneirin",
-          "password": "3a77c4b5a6ad59db942081f6b7140a9b8c793ef6"
+          "userid": "<reader-service-user-id>",
+          "password": "<reader-service-user-password>"
         }
       },
       ...
@@ -53,7 +54,7 @@ Use the writer credentials when making API calls to either read or make changes 
 This operation creates a portfolio entry. Values are required for name and timestamp. To use the following example, replace service-user-id and service-user-password with your service credentials and service-url with the URL for your service.
 
 ```
-curl -X POST -u "{service-user-id}":"{service-user_password}" --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ "name":"P1", "timestamp": "2017-02-24T19:53:56.830Z", "closed": false, "data": { "manager": "Edward Lam" }}' {service-url}/api/v1/portfolios
+curl -X POST -u "<service-user-id>":"<service-user-password>" --header 'Content-Type: application/json' --header 'Accept: application/json' -d '{ "name":"P1", "timestamp": "2017-02-24T19:53:56.830Z", "closed": false, "data": { "manager": "Edward Lam" }}' <service-url>/api/v1/portfolios
 ```
 {:codeblock}
 
