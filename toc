@@ -7,3 +7,11 @@ Investment Portfolio
     {: .navgroup id="learn"}
     index.md
     {: .navgroup-end}
+
+    {: .navgroup id="howto"}
+    dictionary.md
+    {: .navgroup-end}
+
+    {: .navgroup id="reference"}
+    [API reference](https://console.bluemix.net/apidocs/fss-portfolio-service)
+    {: .navgroup-end}
