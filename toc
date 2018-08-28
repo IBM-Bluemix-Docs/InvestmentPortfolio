@@ -13,5 +13,5 @@ Investment Portfolio
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://console.bluemix.net/apidocs/fss-portfolio-service)
+    [API reference](https://console.bluemix.net/apidocs/investment-portfolio)
     {: .navgroup-end}
