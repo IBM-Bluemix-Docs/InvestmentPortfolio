@@ -1,32 +1,43 @@
 ---
 
 copyright:
-  years: 2018
-lastupdated: "2018-07-31"
+  years: 2017, 2019
+lastupdated: "2019-03-06"
+
+keywords: financial risk, dictionary, holdings, storage
+
+subcollection: InvestmentPortfolio
+
 
 ---
-{:new_window: target="_blank"}
+
+<!-- Common attributes used in the template are defined as follows: -->
+<!--{:new_window: target="_blank"}-->
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
 {:screen: .screen}
 {:pre: .pre}
-
+{:download: .download}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:faq: data-hd-content-type='faq'}
 
 # Defining portfolios and holdings
 {: #data_dictionary_investportshort}
 
-When you specify portfolios and holdings for use with 
+When you specify portfolios and holdings for use with
 the {{site.data.keyword.investportshort}} service, you can refer to these tables.
 {:shortdesc}
 
-**Attention**: Don't include personal data (for example, 
-personal names, email addresses, or telephone numbers) when you 
-specify details for portfolios or holdings.
+Don't include personal data (for example, personal names, email addresses, or telephone numbers) when you specify details for portfolios or holdings.
+{:important}
 
 
 ## Defining a portfolio
-Portfolios are collections of financial securities that are held at a 
-certain point in time. Portfolios are specified as an array of objects 
+Portfolios are collections of financial securities that are held at a
+certain point in time. Portfolios are specified as an array of objects
 that are defined by these properties:
 
 |Property Name|Type|Constraint|
@@ -39,11 +50,11 @@ that are defined by these properties:
 {: caption="Table 1. Properties of a portfolio" caption-side="top"}
 
 <!-- Exampes of contents for the data object
-"strategy":"emerging markets", 
+"strategy":"emerging markets",
 "sub-strategy":"distressed debt",  
 "socially_responsible":false,
 -->
-You can use the optional data object of a portfolio to define one or more 
+You can use the optional data object of a portfolio to define one or more
 characteristics of a portfolio itself for downstream analysis.  The data object is open. Specify the characteristics that you need.
 The table shows examples of some commonly used fields in the portfolio data object.
 
@@ -69,10 +80,10 @@ The following example shows how you can define a portfolio with a data object:
   "timestamp": "2018-04-20T13:51:56.830Z",
   "closed": false,
   "data": {
-    "base_currency": "USD", 
-    "benchmark": "S&P500", 
-    "socially_responsible":false, 
-    "strategy":"emerging markets", 
+    "base_currency": "USD",
+    "benchmark": "S&P500",
+    "socially_responsible":false,
+    "strategy":"emerging markets",
     "sub-strategy":"distressed debt"
   }
 }
@@ -129,15 +140,15 @@ curl -X POST \
 
 
 ## Defining holidings
-The individual constituents of a portfolio of financial securities are 
-referred to as _holdings_. Holdings are defined as an array of one or 
-more Holdings objects. Holdings are associated with a time stamp. A 
-portfolio's holdings can change over time as securities are bought, 
+The individual constituents of a portfolio of financial securities are
+referred to as _holdings_. Holdings are defined as an array of one or
+more Holdings objects. Holdings are associated with a time stamp. A
+portfolio's holdings can change over time as securities are bought,
 sold, expire, mature, or otherwise enter or leave the portfolio.
 
-When you define a holding, the asset property is the primary 
-identifier. You can assign more fields, which serve as metadata, to 
-the holding for downstream analysis and aggregation. The table 
+When you define a holding, the asset property is the primary
+identifier. You can assign more fields, which serve as metadata, to
+the holding for downstream analysis and aggregation. The table
 shows properties that are commonly used to describe a holding.
 
 |Property Name|Type|Constraint|
@@ -160,7 +171,7 @@ The following example shows how to define several holdings for a specific time:
 			"timestamp": "2018-04-18T13:31:00.000Z",
 			"holdings": [
 				{
-				"instrumentId": "CX_US64110LAM81_USD", 
+				"instrumentId": "CX_US64110LAM81_USD",
 				"Asset Class": "Corporate",
 				"name": "NETFLIX INC 144A",
 				"PRICE": "USD",
@@ -169,7 +180,7 @@ The following example shows how to define several holdings for a specific time:
 				}
 				,
 				{
-				"instrumentId": "CX_US61166WAP68_USD", 
+				"instrumentId": "CX_US61166WAP68_USD",
 				"Asset Class": "Corporate",
 				"name": "MONSANTO COMPANY",
 				"PRICE": "USD",
@@ -178,7 +189,7 @@ The following example shows how to define several holdings for a specific time:
 				}
 				,
 				{
-				"instrumentId": "CX_US00206RCR12_USD", 
+				"instrumentId": "CX_US00206RCR12_USD",
 				"Asset Class": "Corporate",
 				"name": "AT&T INC",
 				"PRICE": "USD",
@@ -187,7 +198,7 @@ The following example shows how to define several holdings for a specific time:
 				}
 				,
 				{
-				"instrumentId": "CX_US7415034039_NSQ", 
+				"instrumentId": "CX_US7415034039_NSQ",
 				"Asset Class": "Equities",
 				"name": "PRICELINE GROUP INC/THE",
 				"PRICE": "USD",

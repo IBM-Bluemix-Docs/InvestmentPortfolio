@@ -1,13 +1,28 @@
 ---
 
 copyright:
-  years: 2017, 2018
-lastupdated: "2017-08-17"
+  years: 2017, 2019
+lastupdated: "2019-03-06"
+
+keywords: financial risk, getting started, holdings, storage
+
+subcollection: InvestmentPortfolio
+
 
 ---
-{:new_window: target="_blank"}
+
+<!-- Common attributes used in the template are defined as follows: -->
+<!--{:new_window: target="_blank"}-->
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}
+{:screen: .screen}
+{:pre: .pre}
+{:download: .download}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
+{:deprecated: .deprecated}
+{:faq: data-hd-content-type='faq'}
 
 # Getting started with {{site.data.keyword.investportshort}} (Experimental)
 {: #getting_started_investportshort}

@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="InvestmentPortfolio" audience="service" arm="3917551" href="/docs/services/InvestmentPortfolio/index.html"}
+{: .toc subcollection="InvestmentPortfolio" audience="service" arm="3917551" href="/docs/services/InvestmentPortfolio/index.html" path="services/InvestmentPortfolio"}
 Investment Portfolio
 
     {: .navgroup id="learn"}
@@ -13,5 +13,5 @@ Investment Portfolio
     {: .navgroup-end}
 
     {: .navgroup id="reference"}
-    [API reference](https://console.bluemix.net/apidocs/investment-portfolio)
+	[API Reference](https://console.cloud.ibm.com/apidocs/investment-portfolio){: new_window}    
     {: .navgroup-end}
