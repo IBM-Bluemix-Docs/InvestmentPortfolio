@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="InvestmentPortfolio" audience="service" arm="3917551" href="/docs/services/InvestmentPortfolio/index.html" path="services/InvestmentPortfolio"}
+{: .toc subcollection="InvestmentPortfolio" category="app_services" audience="service" arm="3917551" href="/docs/services/InvestmentPortfolio/index.html" path="services/InvestmentPortfolio"}
 Investment Portfolio
 
     {: .navgroup id="learn"}
